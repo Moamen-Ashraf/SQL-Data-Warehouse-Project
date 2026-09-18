@@ -1,3 +1,16 @@
+/*
+----------------------------------------------------------------------------------------
+DDL Script: Initialize Data Warehouse Database
+----------------------------------------------------------------------------------------
+Create the DataWarehouse database and its schemas:
+bronze
+silver
+gold
+
+Note: if the database already exists, it will be dropped and recreated
+      (all connections are terminated and any open transactions are rolled back)
+*/
+
 USE master;
 
 GO
