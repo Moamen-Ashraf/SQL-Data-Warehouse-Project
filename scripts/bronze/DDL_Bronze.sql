@@ -13,12 +13,11 @@ erp_px_cat_g1v2
 
 Note: if table is existed already it will drop it
 */
-
-IF OBJECT_ID('bronze.crm_cut_info', 'U') IS NOT NULL 
-    DROP TABLE bronze.crm_cut_info;
+IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL 
+    DROP TABLE bronze.crm_cust_info;
 GO
 
-CREATE TABLE bronze.crm_cut_info (
+CREATE TABLE bronze.crm_cust_info (
     cst_id INT,
     cst_key VARCHAR(50),
     cst_firstname VARCHAR(30),
@@ -38,6 +37,7 @@ CREATE TABLE bronze.crm_prod_info (
     prd_key VARCHAR(50),
     prd_nm VARCHAR(50),
     prd_cost DECIMAL,
+    prd_line VARCHAR(10),
     prd_start_dt DATETIME,
     prd_end_dt DATETIME
 );
@@ -65,7 +65,7 @@ IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.erp_cust_az12 (
-    cid INT,
+    cid VARCHAR(50),
     bdate DATE,
     gen VARCHAR(10)
 );
@@ -81,11 +81,11 @@ CREATE TABLE bronze.erp_loc_a101 (
 );
 GO
 
-IF OBJECT_ID('bronze.px_cat_g1v2', 'U') IS NOT NULL
-    DROP TABLE bronze.px_cat_g1v2;
+IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
+    DROP TABLE bronze.erp_px_cat_g1v2;
 GO
 
-CREATE TABLE bronze.px_cat_g1v2 (
+CREATE TABLE bronze.erp_px_cat_g1v2 (
     id VARCHAR(50),
     cat VARCHAR(50),
     subcat VARCHAR(50),
