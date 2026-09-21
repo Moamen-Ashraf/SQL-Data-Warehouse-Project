@@ -3,13 +3,8 @@
 DDL Script: Create silver Tables
 ----------------------------------------------------------------------------------------
 Create tables of silver layers:
-crm_cust_info
-crm_prod_info
-crm_sales_details
-
-erp_cust_az12
-erp_loc_a101
-erp_px_cat_g1v2
+    CRM: crm_cust_info, crm_prod_info, crm_sales_details
+    ERP: erp_cust_az12, erp_loc_a101, erp_px_cat_g1v2
 
 Note: if table is existed already it will drop it
 */
