@@ -13,6 +13,8 @@ erp_px_cat_g1v2
 
 Note: if table is existed already it will drop it
 */
+
+-- Table: bronze.crm_cust_info - Bronze Layer
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL 
     DROP TABLE bronze.crm_cust_info;
 GO
@@ -28,6 +30,7 @@ CREATE TABLE bronze.crm_cust_info (
 );
 GO
 
+-- Table: bronze.crm_prod_info - Bronze Layer
 IF OBJECT_ID('bronze.crm_prod_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_prod_info;
 GO
@@ -43,6 +46,7 @@ CREATE TABLE bronze.crm_prod_info (
 );
 GO
 
+-- Table: bronze.crm_sales_details - Bronze Layer
 IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE bronze.crm_sales_details;
 GO
@@ -60,6 +64,7 @@ CREATE TABLE bronze.crm_sales_details (
 );
 GO
 
+-- Table: bronze.erp_cust_az12 - Bronze Layer
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 GO
@@ -71,6 +76,7 @@ CREATE TABLE bronze.erp_cust_az12 (
 );
 GO
 
+-- Table: bronze.erp_loc_a101 - Bronze Layer
 IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 GO
@@ -81,6 +87,7 @@ CREATE TABLE bronze.erp_loc_a101 (
 );
 GO
 
+-- Table: bronze.erp_px_cat_g1v2 - Bronze Layer
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 GO
@@ -92,4 +99,3 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     maintenance VARCHAR(10)
 );
 GO
-
