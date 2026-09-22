@@ -20,7 +20,7 @@ This is a portfolio project built to practice real-world data engineering skills
 
 ## Architecture
 
-![Data Architecture](docs/data_architecture.png)
+![Data Architecture](docs/Architecture.jpg)
 
 Following the Medallion approach from the course — raw data moves through three layers before it's ready for reporting:
 
